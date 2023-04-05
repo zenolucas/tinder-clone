@@ -13,7 +13,7 @@ html {
     color: white;
     text-transform: uppercase;
     font-size: 15px;
-    background: linear-gradient(45deg, #fe3072, #ff5940);
+    background: linear-gradient(45deg, rgb(254,148,114), rgb(255,89,64));
     padding: 12px 30px;
     border-radius: 30px;
     border: none;
@@ -21,5 +21,37 @@ html {
 
 .primary-button:hover {
     /* 260deg 'flips' the color*/
-    background: linear-gradient(260deg, #fe3072, #ff5940);
+    background: linear-gradient(260deg, rgb(254,148,114), rgb(255,89,64));
+}
+
+body {
+    text-align: center;
+}
+
+/*----- Navbar -----*/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo-container {
+    width: 170px;
+    margin: 15px;
+}
+
+nav .logo-container .logo {
+    width: 100%;
+}
+
+/*----- Homepage -----*/
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+    )
 }
